@@ -1,0 +1,26 @@
+{
+  "name": "discord-getting-started",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Discord example app",
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts"
+  },
+  "author": "Shay DeWael",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.15.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
