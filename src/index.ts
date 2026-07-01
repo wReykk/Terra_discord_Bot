@@ -29,6 +29,18 @@ client.on('interactionCreate', async (interaction) => {
     const { execute } = await import('./commands/marco');
     await execute(interaction);
   }
+  if (interaction.commandName === 'roll') {
+    const { execute } = await import('./commands/roll');
+    await execute(interaction);
+  }
+  if (interaction.commandName === 'coinflip') {
+    const { execute } = await import('./commands/coinflip');
+    await execute(interaction);
+  }
+  if (interaction.commandName === '8ball') {
+    const { execute } = await import('./commands/eightBall');
+    await execute(interaction);
+  }
 });
 
 // 4. Подключаем бота к серверам Discord
